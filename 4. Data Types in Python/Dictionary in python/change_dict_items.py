@@ -1,17 +1,17 @@
 
 # We can change the only of a key .
 
-student = {
-    "name" : "Aftab",
-    "age" : 18,
-    "marks" : 1075,
-    "subjects" : {
-        "chem" : 95,
-        "Eng" : 96,
-        "Biology" : 85,
-        "Physics" : 90,
-    }
-}
+# student = {
+#     "name" : "Aftab",
+#     "age" : 18,
+#     "marks" : 1075,
+#     "subjects" : {
+#         "chem" : 95,
+#         "Eng" : 96,
+#         "Biology" : 85,
+#         "Physics" : 90,
+#     }
+# }
 
 
 # student["name"] = "Ali"

@@ -1,17 +1,17 @@
 
  # There are following methods for dictionary.
 
-student = {
-    "name" : "Aftab",
-    "age" : 18,
-    "marks" : 1075,
-    "subjects" : {
-        "chem" : 95,
-        "Eng" : 96,
-        "Biology" : 85,
-        "Physics" : 90,
-    }
-}
+# student = {
+#     "name" : "Aftab",
+#     "age" : 18,
+#     "marks" : 1075,
+#     "subjects" : {
+#         "chem" : 95,
+#         "Eng" : 96,
+#         "Biology" : 85,
+#         "Physics" : 90,
+#     }
+# }
 #################--------------- get() method --------------------#####################
 # This method is use to acess any item in the dictionary.
 # print(student.get)

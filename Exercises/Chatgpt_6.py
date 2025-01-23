@@ -7,8 +7,7 @@
 # greet()
 
  
-
-
+ 
 # Write a function named add_numbers(a, b) that returns the sum of two numbers passed as arguments.
 
 # def add_num(a, b):
@@ -17,8 +16,7 @@
 # add_num(3, 5)
 
 
-
-
+ 
 
 
 # Create a function is_even(number) that returns True if the given number is even, and False otherwise.
@@ -32,7 +30,6 @@
 # is_even(int(input("Enter a number: ")))
 
  
-
 
 
 
@@ -50,8 +47,7 @@
 
 
  
-
-
+ 
 
 
 # Write a function square(num) that takes a number as input and returns its square.
@@ -71,8 +67,7 @@
 
  
 
-
-
+ 
 
 # Define a function multiply_list(numbers) that multiplies all the numbers in a list and returns the result.
 
@@ -85,15 +80,7 @@
 # print(multiply_list(numbers))
 
 
-def multiply_list(lst):
-    fact = 1
-    for x in lst:
-        fact *= x
-    return fact
-lst = [1, 2, 3, 4, 5, 6]
-print(multiply_list(lst))
-
-
+ 
 
 # Write a function count_vowels(text) that counts the number of vowels (a, e, i, o, u) in a given string.
 
@@ -107,7 +94,6 @@ print(multiply_list(lst))
 # print(count_vowels(text))
 
 
-
 # Alternative: 
 
 # def count_vowels(text):
@@ -117,7 +103,7 @@ print(multiply_list(lst))
 
 
 
-
+ 
 
 # Create a function reverse_string(s) that returns the reverse of a given string.
 
@@ -128,8 +114,7 @@ print(multiply_list(lst))
 
 
 
-
-
+ 
 
 
 # Write a function factorial(n) to calculate the factorial of a given number.
@@ -147,7 +132,7 @@ print(multiply_list(lst))
 
 
 
-
+ 
 
 
 
@@ -173,8 +158,7 @@ print(multiply_list(lst))
 # b = int(input("Enter second number: "))
 # c = int(input("Enter third number: "))
 # print(f"The largest number is {max_of_three(a, b, c)}")
-
-
+ 
 
 
 
@@ -207,9 +191,8 @@ print(multiply_list(lst))
 
 
 
-
-
-
+ 
+ 
 
 
 
@@ -226,8 +209,8 @@ print(multiply_list(lst))
 # print(fibonacci(8))
 
 
-
-
+ 
+ 
 
 
 
@@ -258,9 +241,7 @@ print(multiply_list(lst))
 
 
 
-
  
-
 
 
 
@@ -273,17 +254,16 @@ print(multiply_list(lst))
 # print(sort_word(sentence))
  
 
+ 
 
 
 
 # Create a function remove_duplicates(lst) that removes duplicate elements from a list.
 
-# def remove_duplicates(lst):
+# def remove_duplicate(lst):
 #     return list(set(lst))
-# lst = list(input("Enter a list of numbers: ").split())
-# print(remove_duplicates(lst))
-
-
+# lst = list(map(int, input("Enter a list of numbers: ").split()))
+# print(remove_duplicate(lst))
 
 
 
@@ -315,10 +295,8 @@ print(multiply_list(lst))
 #     print("Invalid syntax. Please enter correct values.")
 
 
-
-
-
-
+ 
+ 
 
 
 # Define a function find_gcd(a, b) to find the greatest common divisor (GCD) of two numbers.
@@ -359,9 +337,7 @@ print(multiply_list(lst))
 
 
 
-
-
-
+ 
 
 # Create a function is_anagram(str1, str2) that checks whether two strings are anagrams of each other.
 
@@ -370,7 +346,7 @@ print(multiply_list(lst))
 # print(is_anagram("hello", "world"))
 # print(is_anagram("triangle", "integral"))
 
-
+ 
 # Alternative:
 
 # def is_anagram(str1, str2):
@@ -386,9 +362,7 @@ print(multiply_list(lst))
 #     print("Invalid syntax. Please enter correct values.")
 
 
-
-
-
+ 
 
 
 # Write a function map_lengths(words) that takes a list of words and returns a list of their lengths.
@@ -412,8 +386,7 @@ print(multiply_list(lst))
 # print(map_length(sentence))
 
 
-
-
+ 
 
 
 # Define a function merge_dicts(dict1, dict2) that merges two dictionaries into one.
@@ -501,3 +474,241 @@ print(multiply_list(lst))
 #     print("Password is stronge")
 # else:
 #     print("Password is incorrect.")
+
+
+
+ 
+
+
+
+
+
+
+
+# Write a function sum_of_digits(n) that takes an integer input and returns the sum of its digits using a loop.  
+
+# def sum_of_digits(num):
+#     return sum(int(digit) for digit in num)
+# num = input("Enter a number: ")
+# print(f"sum of digit is {sum_of_digits(num)}")
+ 
+
+
+
+
+
+
+
+# Create a function filter_even(numbers) that takes a list of integers and return only the even numbers.
+
+# def filter_even(numbers):
+#     return filter(lambda x : x % 2 == 0, numbers)
+# numbers = list(map(int, input("Enter a list of numbers: ").split()))
+# print(list(filter_even(numbers)))
+
+
+ 
+
+
+
+
+
+
+# Write a recursive function sum_range(start, end) that returns the sum of all integers between start and end, inclusive.
+
+# def sum_range(start, end):
+#     return sum(num for num in range(start, end + 1))
+# start = int(input("Enter starting number: "))
+# end = int(input("Enter ending number: "))
+# print(sum_range(start, end))
+
+
+
+# Alternative:
+
+# def sum_range(start, end):
+#     if start == end:
+#         return start
+#     return start + sum_range(start + 1, end)
+# try:
+#     start = int(input("Enter starting number: "))
+#     end = int(input("Enter an ending number: "))
+#     if start > end:
+#         print("Starting number must be less or equal to end number.")
+#     else:
+#         print(f"The sum of digit between {start} to {end} is {sum_range(start, end)}")
+# except ValueError:
+#     print("invalid syntax. Please enter valid input.")
+
+
+ 
+
+
+
+
+
+
+# Write a function is_palindrome(word) that checks if a given string is a palindrome  using slicing.
+
+# def is_palindrome(word):
+#     return word == word[::-1]
+# word = input("Enter a string: ").replace(" ", "").lower()
+# print(is_palindrome(word))
+
+
+
+
+
+
+
+
+# Write a function is_palindrome(word) that checks if a given string is a palindrome  without  using slicing.
+
+# def is_palindrome(word):
+#     reversed_string = ""
+#     for char in word:
+#         reversed_string = char + reversed_string
+#     if word == reversed_string:
+#         return True
+#     return False
+   
+# word = input("Enter a string: ").replace(" ", "").lower()
+
+# if is_palindrome(word):
+#     print("String is palindrome")
+# else:
+#     print("string is not palindrome")
+
+
+
+
+
+
+
+
+
+# Create a function sort_by_length(words) that takes a list of words and uses a lambda function with sorted to sort them by length.
+
+# def sort_by_length(words):
+#     return sorted(words, key= lambda word : len(word))
+# words = input("Enter a sentence").split()
+# print(sort_by_length(words))
+
+ 
+
+
+
+
+
+
+
+
+# Write a function factorial() that asks the user for a number and calculates its factorial using recursion.
+
+
+# def factorial(num):
+#     if num == 1:
+#         return num
+#     fact = num * factorial(num - 1)
+#     return fact
+# try:
+#     num = int(input("Enter a number: "))
+#     if num <= 0:
+#         print("Please enter a positive number: ")
+#     else:
+#         print(f"The factoria of {num} is {factorial(num)}")
+# except ValueError:
+#     print("Invalid syntax. Please enter an interger value.")
+
+
+
+ 
+
+
+
+
+
+# Write a function sum_even_numbers(n) that calculates the sum of all even numbers up to a given number n using a loop.
+
+# def sum_even(num):
+#     total = 0
+#     for i in range(2, num + 1, 2):
+#         total += i
+#     return total
+# try:
+#     num = int(input("Enter a number: "))
+#     if num < 0:
+#         print("Please enter a positive number: ")
+#     else:
+#         print(f"sum of even digits till {num} is {sum_even(num)}")
+# except ValueError:
+#     print("Invalid syntax. Please enter valid input.")
+
+
+
+
+# Alternative: 
+
+# def sum_even(num):
+#     return sum(x for x in range(1, num + 1) if x % 2 == 0)
+# try:
+#     num = int(input("Enter a number: "))
+#     if num < 0:
+#         print("Please enter a positive number: ")
+#     else:
+#         print(f"sum of even digits till {num} is {sum_even(num)}")
+# except ValueError:
+#     print("Invalid syntax. Please enter valid input.")
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+# Create a function char_frequency(text) that takes a string and returns a dictionary showing the frequency of each character using a loop.
+
+# def char_frequency(word):
+#     frequency = {}
+#     for char in word:
+#         if char in frequency:
+#             frequency[char] += 1
+#         else:
+#             frequency[char] = 1
+#     return frequency
+# word = input("Enter a word: ")
+# print(char_frequency(word))
+
+
+
+
+
+
+
+
+# Write a function simple_calculator(a, b, operation) that uses a lambda function to perform addition, subtraction, multiplication, or division based on the operation parameter.
+
+# def simple_calculator(a, b, operation):
+#     operations = {
+#         "add" : lambda x, y : x + y,
+#         "subtract" : lambda x, y : x - y, 
+#         "multiply" : lambda x, y : x * y,
+#         "divide" : lambda x, y : x // y if y != 0 else "Division by zero is not allowed."
+#     }
+
+#     if operation in operations:
+#         return operations[operation](a, b)
+#     else:
+#         print("Invalid operation. Please enter add, subtract, multiply, divide.")
+
+# a = int(input("Enter first value: "))
+# b = int(input("Enter second value: "))
+# operation = input("Chose operation: ")
+
+# print(simple_calculator(a, b, operation))
+

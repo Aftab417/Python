@@ -1,17 +1,17 @@
 
 # We can access dictionay items by using key but the best methon to acces the items of dictionary is .get() method.
 
-student = {
-    "name" : "Aftab",
-    "age" : 18,
-    "marks" : 1075,
-    "subjects" : {
-        "chem" : 95,
-        "Eng" : 96,
-        "Biology" : 85,
-        "Physics" : 90,
-    }
-}
+# student = {
+#     "name" : "Aftab",
+#     "age" : 18,
+#     "marks" : 1075,
+#     "subjects" : {
+#         "chem" : 95,
+#         "Eng" : 96,
+#         "Biology" : 85,
+#         "Physics" : 90,
+#     }
+# }
 
 # print(student)
 # print(student["name"])

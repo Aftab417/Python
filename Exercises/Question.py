@@ -159,7 +159,6 @@
 
 ##################------------- practice Question about Loops ------------------######################
 
-# Basic:
 
 # Print all even numbers between 1 and 20.
 # Print all odd numbers between 1 and 20.
@@ -171,8 +170,6 @@
 # Print all numbers between 1 and 50 that are divisible by both 3 and 5.
 # Count the number of vowels in a given string.
 # Create a multiplication table (from 1 to 10) for numbers 1 to 5.
-
-
 
 
 
@@ -265,4 +262,14 @@
 # Define a function merge_dicts(dict1, dict2) that merges two dictionaries into one.
 # Write a function validate_password(password) that checks if the given password is strong 
 #     (contains at least 8 characters, including uppercase, lowercase, and a number).
-
+ 
+# Write a function sum_of_digits(n) that takes an integer input and returns the sum of its digits using a loop. For example, sum_of_digits(123) should return 6.
+# Create a function filter_even(numbers) that takes a list of integers and uses a lambda function with filter to return only the even numbers.
+# Write a recursive function sum_range(start, end) that returns the sum of all integers between start and end, inclusive.
+# Write a function is_palindrome(word) that checks if a given string is a palindrome without using slicing.
+# Create a function sort_by_length(words) that takes a list of words and uses a lambda function with sorted to sort them by length.
+# Write a function factorial() that asks the user for a number and calculates its factorial using recursion.
+# Write a function sum_even_numbers(n) that calculates the sum of all even numbers up to a given number n using a loop.
+# Create a function char_frequency(text) that takes a string and returns a dictionary showing the frequency of each character using a loop.
+# Write a function simple_calculator(a, b, operation) that uses a lambda function to perform addition, subtraction, multiplication, or division based on the operation parameter.
+ 
