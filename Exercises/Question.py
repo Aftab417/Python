@@ -273,3 +273,33 @@
 # Create a function char_frequency(text) that takes a string and returns a dictionary showing the frequency of each character using a loop.
 # Write a function simple_calculator(a, b, operation) that uses a lambda function to perform addition, subtraction, multiplication, or division based on the operation parameter.
  
+
+
+
+
+
+
+###########---------- Practice question about File Handling in Python. ------------##########
+
+# Write a programe to creat a file and write  the following content in it and in exact given format.
+# Hi, everyone
+# I am learning File I/O 
+# using Python.
+# I like programmming in Python.
+
+# Write a programe to replace the word "Python" with "Java" in above file.
+# Write a programme that searches is the word "learning" exist in the file.
+# Write a Function in which line does the word "learning" occure first and return -1 if the word does not exist.
+# From a file containing numbers seprated by comma, print the count of even numbers.
+
+# Write a Python program to read the contents of a file named example.txt and display it on the console.
+# Write a Python program to create a file named output.txt and write the text "Hello, File Handling!" into it.
+# Modify the file output.txt to add the text "This is an appended line." without overwriting the existing content.
+# Write a Python program to count and print the number of lines in a file named data.txt.
+# Write a Python program to read the first 3 lines of a file named sample.txt.
+
+# Write a Python program to copy the contents of source.txt into a new file named destination.txt.
+# Write a Python program to check if the word "Python" exists in a file named document.txt and display its frequency.
+# Write a Python program that writes a list of numbers [1, 2, 3, 4, 5] to a file numbers.txt. Then read the file and calculate their sum.
+# Write a Python program to read a large file (largefile.txt) line by line without loading the entire file into memory.
+# Write a Python program to encrypt the contents of a file plain.txt by shifting each character by 3 ASCII values and save it to encrypted.txt. Then write a program to decrypt it back to the original file.
