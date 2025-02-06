@@ -68,6 +68,8 @@
 
 
 
+
+
 ###################---------- Constructor  __init__() function --------------#####################
 
 
@@ -88,6 +90,8 @@
 
 # print(p1.name)
 # print(p1.age)
+
+
 
 
 
@@ -173,6 +177,8 @@
 
 
 
+
+
 ###################---------- Deleting Object Attributes --------------#####################
 
 
@@ -193,6 +199,8 @@
 # del p1.age
 
 # print(p1)            # It will throw an error because the age parameter is deleted.
+
+
 
 
 
@@ -237,6 +245,7 @@
 
 # class person:
 #     pass
+
 
 
 
@@ -318,6 +327,10 @@
 
 
 
+
+
+
+
 #########################------------- Types of Methods --------------###########################
 
 
@@ -345,21 +358,13 @@
 
 # Example:
  
-# class MyClass:
-#     def instance_method(self):
-#         return f"Called instance_method of {self}"
-
-# obj = MyClass()
-# print(obj.instance_method())  # Output: Called instance_method of <__main__.MyClass object>
-
-
-
+ 
 # class student:
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
 
-#     def greet(self):
+#     def greet(self):                                      # instance method.
 #         print(f"Hi, My name is {self.name}")
 
 # s1 = student("Ali", 20)
@@ -394,16 +399,7 @@
 
 # Example:
  
-# class MyClass:
-#     class_variable = 10
-
-#     @classmethod
-#     def class_method(cls):
-#         return f"Called class_method of {cls}, class_variable = {cls.class_variable}"
-
-# print(MyClass.class_method())  # Output: Called class_method of <class '__main__.MyClass'>, class_variable = 10
-
-
+ 
 
 
 # class Dog:
@@ -413,8 +409,8 @@
 #         self.name = name
 #         self.age = age
 
-#     @classmethod
-#     def dog_type(cls):
+#     @classmethod                                        # Class Decorator.
+#     def dog_type(cls):                                  # Class Method.
 #         print(f"The Type of Dog is {cls.species}")
 
 # Dog.dog_type()
@@ -451,12 +447,22 @@
 
 # Example:
  
-# class MyClass:
-#     @staticmethod
-#     def static_method():
-#         return "Called static_method"
+# class Dog:
+#     species = "canis"
 
-# print(MyClass.static_method())  # Output: Called static_method
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+
+#     @staticmethod                                    # Static method Decorator.
+#     def calling():                                   # Static method.
+#         print(f"I call my Dog as 'Buddy'")
+
+# dog = Dog("Buddy", 5)
+
+# dog.calling()                                       # Static method can be called by instance.
+# Dog.calling()                                       # Static mehtod can be called by class.
+ 
 
 
 
@@ -484,37 +490,46 @@
 
 # Example Combining All Three:
  
-# class MyClass:
-#     class_variable = 100
 
-#     def __init__(self, instance_variable):
-#         self.instance_variable = instance_variable
+# class Dog:
+#     species = "Canis"
 
-#     # Instance Method
-#     def instance_method(self):
-#         return f"Instance method: instance_variable = {self.instance_variable}"
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-#     # Class Method
+#     #  instance method.
+#     def get_age(self):
+#         print(f"The age of {self.name} is {self.age}")
+
+#     # class method.
 #     @classmethod
-#     def class_method(cls):
-#         return f"Class method: class_variable = {cls.class_variable}"
+#     def type(cls):
+#         print(f"The specie is {cls.species}")
 
-#     # Static Method
+#     # static mehtod:
 #     @staticmethod
-#     def static_method():
-#         return "Static method: No access to instance or class data"
-
-# # Instance Method
-# obj = MyClass(10)
-# print(obj.instance_method())  # Output: Instance method: instance_variable = 10
-
-# # Class Method
-# print(MyClass.class_method())  # Output: Class method: class_variable = 100
-
-# # Static Method
-# print(MyClass.static_method())  # Output: Static method: No access to instance or class data
+#     def calling():
+#         print(f"I call my Dog as 'Budy'")
 
 
+# # Object/instance
+# dog1 = Dog("Budy", 5)
+
+
+# # Calling instance method.  It can only called by instance.
+# dog1.get_age()
+
+
+# # Calling class mehtod.    It can called by both class and instance.
+# Dog.type()
+# dog1.type()
+
+
+
+# # Calling static method.   It can called by both class and instance.
+# dog1.calling() 
+# Dog.calling()
 
 
 
