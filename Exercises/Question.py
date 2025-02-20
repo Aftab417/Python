@@ -279,6 +279,11 @@
 
 
 
+
+
+
+
+
 ###########---------- Practice question about File Handling in Python. ------------##########
 
 # Write a programe to creat a file and write  the following content in it and in exact given format.
@@ -303,3 +308,53 @@
 # Write a Python program that writes a list of numbers [1, 2, 3, 4, 5] to a file numbers.txt. Then read the file and calculate their sum.
 # Write a Python program to read a large file (largefile.txt) line by line without loading the entire file into memory.
 # Write a Python program to encrypt the contents of a file plain.txt by shifting each character by 3 ASCII values and save it to encrypted.txt. Then write a program to decrypt it back to the original file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#######################----------  Practice questions about OOPS  ------------############################
+
+
+
+# Basic Level:
+# Create a simple Car class with attributes brand and model, and a method display_info() to print these details.
+# Create an object of the Car class and call its method.
+# Create a class Person with a private attribute __age. Add a method to get and set the value of __age using getter and setter methods.
+# Create a Circle class with an instance method area() that returns the area of the circle.
+# Define a class with a class method and static method. Explain the difference between them in your code comments.
+
+
+# Intermediate Level:
+# Create a class BankAccount with private attributes __balance. Implement methods to deposit and withdraw money while ensuring balance doesn’t go negative.
+# Implement a Student class with instance attributes name and marks. Use @classmethod to keep track of the total number of students.
+# Create an abstract class Shape with an abstract method area(). Inherit it in Rectangle and Circle classes and implement area().
+# Implement multiple inheritance by creating a class Employee and another class Manager, and then derive a class TeamLead from both.
+# Implement a hierarchical inheritance where Mammal is the parent class and Dog and Cat are child classes.
+
+
+# Advanced Level:
+# Implement a hybrid inheritance structure using at least four classes.
+# Create a Vehicle class with a max_speed attribute. Use method overriding in Car and Bike subclasses to display different speed limits.
+# Implement operator overloading for + in a Vector class to add two vectors.
+# Implement operator overloading for == in a Point class to compare two points.
+# Demonstrate method overloading using default arguments in Python.
+# Create a Person class and override the __str__ method to return a meaningful string representation.
+# Implement a method where a function operates on different objects having the same method name.
+# Create a Smartphone class with a __battery_life private attribute and define getter, setter, and deleter methods.
+# Create a program that maintains a list of different shapes (Circle, Square, Triangle) and uses polymorphism to call the area() method on each object.
+# Implement a class that enforces encapsulation strictly using private attributes and only allows controlled access via methods.
+
+
+
+
