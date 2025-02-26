@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #game-container {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h2>Guess a number between 1 and 100</h2>
+        <input type="number" id="guess" placeholder="Enter your guess">
+        <button onclick="submitGuess()">Submit</button>
+        <p id="message"></p>
+        <p id="attempts">Attempts left: 5</p>
+    </div>
+
+    <script>
+        let attempts = 5;
+        
+        function submitGuess() {
+            let guess = document.getElementById("guess").value;
+            
+            fetch("/guess", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ guess: parseInt(guess) })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("message").innerText = data.message;
+                document.getElementById("attempts").innerText = "Attempts left: " + data.attempts;
+
+                if (data.status === "win" || data.status === "lose") {
+                    setTimeout(() => {
+                        window.location.reload();  // Restart game
+                    }, 3000);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
