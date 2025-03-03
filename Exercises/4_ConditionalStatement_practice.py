@@ -241,6 +241,113 @@
 
 
 
+
+
+
+
+
+# Write a programme to check if a number entered by the user is odd or even.
+
+# num = int(input("Enter a Number: "))
+# if num % 2 == 0:
+#     print(num, "is Even.")
+# else:
+#     print(num, "is Odd.")
+
+
+
+
+
+
+
+
+
+
+
+# Write a programme to find out the largest of 3 values.
+
+# a = int(input("Enter First Number: "))
+# b = int(input("Enter Second Number: "))
+# c = int(input("Enter Third Number: "))
+
+# if (a > b and a > c):
+#     print("First value is largest") 
+# elif(b > a and b > c):
+#     print("second value is largest")
+# elif(c > a and c > b):
+#     print("Third value is largest")
+    
+
+# Alternative Method:
+
+
+# a = int(input("Enter First Number: "))
+# b = int(input("Enter Second Number: "))
+# c = int(input("Enter Third Number: "))
+
+# if (a > b and a > c):
+#     print("First value is largest") 
+# elif(b > c):
+#     print("second value is largest")
+# else:
+#     print("Third value is largest")
+
+
+
+
+
+
+
+
+
+
+
+# Write a programme to find out the largest of four values.
+
+# a = int(input("Enter First Number: "))
+# b = int(input("Enter Second Number: "))
+# c = int(input("Enter Third Number: "))
+# d = int(input("Enter Fourth Number:"))
+
+# if (a > b and a > c and a > d):
+#     print("First value is largest") 
+# elif(b > c and b > d):
+#     print("second value is largest")
+# elif(c > d):
+#     print("Third value is largest")
+# else:
+#     print("Fourth value is largest")
+
+
+
+
+
+
+
+
+
+
+
+# Write a programme to find out the number is multiple of 7 or not.
+
+# num = int(input("Enter a number: "))
+# if (num % 7== 0):
+#     print(num, "is multiple of 7")
+# else:
+#     print(num , "is not a multiple of 7")
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Write a program that calculates the sum of digits in a number.
 
 # num = input("Enter a number: ")
@@ -334,6 +441,94 @@
 # }
 
 # print(grades.get(grade, "Fail" ))
+
+
+
+
+
+
+
+
+
+# Write a programme input the color of light and tell the user what to do on trafic signal.
+
+# light = input("Enter color of light: ")
+# if (light == "red"):
+#     print("Stop")
+# elif(light == "yellow"):
+#     print("Ready to Go.")
+# elif(light == "green"):
+#     print("You can Go.")
+# else:
+#     print("Signal light is not working.")
+
+
+
+
+
+
+
+
+
+
+
+
+# Write a programme to check either a person can vote or not.
+
+# age = int(input("Enter Your Age: "))
+# if (age >= 18):
+#     print("You can Vote.")
+# else:
+#     print("You can not Vote.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Write a programme to tell the student grade based on his marks.
+
+# marks = float(input("Enter Your Marks: "))
+# if (marks >= 90):
+#     print("You grade is A")
+# elif(90 > marks >= 80):
+#     print("Your grade is B")
+# elif(80 > marks >= 70):
+#     print("Your grade is C")
+# elif(70 > marks >= 60):
+#     print("Your grade is D")
+# else:
+#     print("Your grade is E")
+
+
+# Alternative Method.
+
+# marks = float(input("Enter Your Marks: "))
+# if (marks >= 90):
+#     print("You grade is A")
+# elif(marks >= 80 and marks < 90):
+#     print("Your grade is B")
+# elif(marks >=70 and marks < 80):
+#     print("Your grade is C")
+# elif(marks >= 60 and marks < 70):
+#     print("Your grade is D")
+# else:
+#     print("Your grade is E")
+
+
+
+
+
+
+
 
 
 
