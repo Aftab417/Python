@@ -358,3 +358,106 @@
 
 
 
+
+
+
+
+#######################----------  Practice questions about Modules  ------------############################
+
+###########################----------------  OS MODULE  -----------------###########################
+ 
+
+# Write a Python program that:
+# Creates a file named "test1.txt" in the current directory.
+# Renames it to "renamed_test.txt" if it exists.
+# Prints a message confirming the renaming.
+
+
+
+# Write a program that:
+# Checks if "old_file.txt" exists in the current directory.
+# If it exists, rename it to "new_file.txt".
+# If it does not exist, print "File not found."
+ 
+
+
+# Write a script that:
+# Checks if "notes.txt" exists on your Desktop.
+# If it exists, rename it to "backup_notes.txt".
+# If not, print "File does not exist on Desktop."
+
+ 
+
+# Write a program that:
+# Creates two files: "file1.txt" and "file2.txt".
+# Checks if both files exist.
+# Renames "file1.txt" → "renamed_file1.txt" and "file2.txt" → "renamed_file2.txt".
+# Prints a success message after renaming.
+ 
+
+
+# Write a script that:
+# Asks the user to input a file name (e.g., "document.txt").
+# Checks if the file exists in C:\Users\ML\OneDrive\Desktop\.
+# If it exists, renames it to "archived_document.txt".
+# If not, prints "File does not exist."
+ 
+
+
+# Write a program that:
+# Creates three files in the current directory: "data1.txt", "data2.txt", "data3.txt".
+# Renames them to "new_data1.txt", "new_data2.txt", "new_data3.txt".
+# Uses a loop to rename them automatically.
+
+
+ 
+# Write a program that:
+# Asks the user to enter the current file name and the new file name.
+# Checks if the current file exists.
+# If it exists, renames it to the new name.
+# If not, prints "File not found."
+
+
+ 
+# Write a script that:
+# Creates "sample.txt" in the current directory.
+# Renames it to "example.txt".
+# Checks if "example.txt" now exists and prints "Renaming successful!"
+# If it doesn’t exist, print "Renaming failed!"
+ 
+
+
+# Write a Python program that:
+# Checks if "logfile.txt" exists either in the current directory OR on Desktop.
+# If it exists in the current directory, rename it to "log_backup.txt".
+# If it exists on the Desktop, rename it to "desktop_log_backup.txt".
+# If it does not exist in either location, print "File not found in both locations."
+ 
+
+
+# Modify a program so that:
+# Before renaming a file, it checks if a file with the new name already exists.
+# If the new file name already exists, print "Rename failed! File with this name already exists."
+# If not, proceed with renaming.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
