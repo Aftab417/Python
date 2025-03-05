@@ -303,6 +303,110 @@
 
 
 
+
+
+
+
+
+
+
+#################--------------  os.path.join()   -----------------#######################
+
+
+# This function join base directory with subdirectory.    ------->     base_dir\\sub_dir
+
+
+
+# import os
+
+# base_dir = "workspace"
+# sub_dir = "images"
+
+
+# sub_dir_path = os.path.join(base_dir, sub_dir)
+
+# if not os.path.exists(sub_dir_path):
+#     os.makedirs(sub_dir_path)
+# else:
+#     print("Path already exists")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################--------------  os.path.isfile(f)   -----------------#######################
+
+# This function checks that the given object is a file or folder.
+
+
+
+# import os
+
+# with open("hello.txt", "x") as f:
+#     print("file is successfully created")
+
+#     if os.path.isfile("hello.txt"):
+#         print(f"'hello.txt' is a file")
+#     else:
+#         print(f"'hello.txt' is a folder")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################--------------  os.path.splitext()   -----------------#######################
+
+
+# This function split the file name into two in a tuple. First_name(file name without dot(.))
+# second_name(it is the file extension with dot(.))
+
+
+
+# import os
+
+# file_name = "photo.jpg"
+
+# file_ext = os.path.splitext(file_name)[1].lower()
+
+# print(file_ext)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #################--------------  Summary  -----------------#######################
 
 
@@ -315,4 +419,6 @@
 # os.listdir()
 # os.rename()
 # os.path.exist()
-# shutil.rmtree()
+# os.path.isfile()
+# os.path.splitext()
+# os.path.join()
