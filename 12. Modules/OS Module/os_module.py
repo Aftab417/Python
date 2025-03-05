@@ -375,6 +375,27 @@
 
 
 
+#################--------------  os.path.isdir(d)   -----------------#######################
+
+
+# import os
+
+# os.mkdir("hello")
+
+
+# if os.path.isdir("hello"):
+#     print("Yes 'hello' is a directory")
+# else:
+#     print("No 'hello' is not a directory")
+
+
+
+
+
+
+
+
+
 
 
 #################--------------  os.path.splitext()   -----------------#######################
@@ -420,5 +441,6 @@
 # os.rename()
 # os.path.exist()
 # os.path.isfile()
+# os.path.isdir()
 # os.path.splitext()
 # os.path.join()

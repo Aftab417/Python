@@ -333,6 +333,57 @@
 
 
 
+# Solution:
+
+
+# import os
+# import shutil
+# import datetime
+
+
+# def backup_dir(target_dir):
+#     if not os.path.exists(target_dir):
+#         print(f"{target_dir} not exists.")
+#         return
+    
+
+#     # Create backup directory if doesn't exist 
+#     backup_dir = "backup"
+#     if not os.path.exists(backup_dir):
+#         os.mkdir(backup_dir)
+
+
+#     # Generate timestamped in directory name
+#     timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+#     new_name = f"{target_dir}_{timestamp}"
+
+
+#     # Rename directory
+#     os.rename(target_dir, new_name)
+
+
+#     # Move directory to backup folder
+#     shutil.move(new_name, backup_dir)
+
+
+
+#     # show backup directory content
+#     print("Backup content")
+#     print(os.listdir(backup_dir))
+
+
+
+# backup_dir('hello')    
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -345,6 +396,54 @@
 # Asks the user to enter a filename to delete.
 # Checks if the file exists using os.path.exists().
 # If the file exists, ask the user for confirmation before deleting it using os.remove().
+
+
+# Solution:
+
+
+
+# import os
+# import shutil
+
+
+# def delete_file():
+    
+#     # List all files in the current directory
+#     files = [f for f in os.listdir() if os.path.isfile(f)] 
+#     print("Files in current Directory")
+#     for file in files:
+#         print(file)
+
+
+
+#     # Ask user for filename to delete
+#     filename = input("Enter the filename you want to delete: ")  
+
+
+#     # checking file existence
+#     if os.path.exists(filename):
+#         confirm = input(f"Are you sure, you want to delete {filename}? (yes/no): ").strip().lower() 
+#         if confirm == "yes":
+#             os.remove(filename)
+#             print(f"{filename} is deleted")
+#         else:
+#             print("Deletion canceled")
+
+
+
+# delete_file()            
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
