@@ -427,6 +427,36 @@
 
 
 
+#################--------------  os.path.basename()   -----------------#######################
+
+# This function extract the basename out of give path.
+
+
+
+
+
+# import os
+
+# path = "home/Users/ML/OneDrive/Desktop/hello"
+
+# print(os.path.basename(path))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #################--------------  Summary  -----------------#######################
 
@@ -444,3 +474,4 @@
 # os.path.isdir()
 # os.path.splitext()
 # os.path.join()
+# os.path.basename() 

@@ -1,5 +1,5 @@
 
-###################----------------  OS MODULE -----------------########################
+###################---------------- Practice OS MODULE -----------------########################
 
 
 # Write a Python program that:
@@ -449,28 +449,6 @@
 
 
 
-
-
-
-
-# Write a Python script that:
-
-# Lists all files in a folder.
-# Renames all .txt files to have a _backup suffix before the extension.
-# Example: notes.txt → notes_backup.txt
-# Print the updated list of files.
-
-
-
-
-
-
-
-
-
-
-
-
 # Write a program that:
 
 # Creates a directory named recycle_bin/ if it does not exist.
@@ -478,6 +456,77 @@
 # Allows the user to restore a deleted directory from recycle_bin/ by renaming it back to its original location.
 
 
+# Solution:
+
+
+# import os
+# import shutil
+
+
+# # Ensuring recycle_bin or not if not create it
+
+# def ensure_recycle_bin():
+#     if not os.path.exists("recycle_bin"):
+#         os.makedirs("recycle_bin") 
+  
+
+
+# # Move deleted directories to recycle_bin instead of parmanently deleting
+
+# def move_to_recycle_bin(dir):
+#     if os.path.exists(dir) and os.path.isdir(dir):
+#         ensure_recycle_bin()
+#         shutil.move(dir, os.path.join("recycle_bin", os.path.basename(dir)))
+#         print(f"{dir} is moved to recycle_bin")
+#     else:
+#         print(f"{dir} is not found")
+
+
+
+
+# # Restoring Directory from recycle_bin
+
+# def restore_from_recycle_bin(dir):
+#     recycle_path = os.path.join("recycle_bin", dir)
+#     if os.path.exists(recycle_path):
+#         shutil.move(recycle_path, dir)
+#         print(f"{dir} moved from recycle_bin")
+#     else:
+#         print(f"{dir} is not found")
+
+
+
+# def main():
+#     while True:
+#         print("\nOptions:") 
+#         print("1. Move Directory to recycle_bin")       
+#         print("2. Move Directory from recycle_bin")       
+#         print("3. Exit") 
+
+
+#         choice = input("Enter your choice: ")
+
+#         if choice == "1":
+#             dir_name = input("Enter the directory name to delete: ")
+#             move_to_recycle_bin(dir_name)
+
+#         elif choice == "2":
+#             dir_name = input("Enter the directory name to restore: ")
+#             restore_from_recycle_bin(dir_name)
+#         elif choice == "3":
+#             break
+#         else:
+#             print("Invalid Input")
+
+
+# if __name__ == "__main__":
+#     main()            
+
+
+
+           
+
+          
 
 
 
@@ -485,28 +534,7 @@
 
 
 
-
-
-
-
-# Write a script that:
-
-# Captures a list of files and directories in a folder before and after making changes.
-# After renaming, creating, or deleting files, compare the old and new lists.
-# Print which files were added, removed, or renamed.
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 # Write a program that:
@@ -514,6 +542,87 @@
 # Creates 100 folders named Folder_1 to Folder_100 using a loop and os.mkdir().
 # After creation, lists all the folders to verify.
 # Deletes all folders using shutil.rmtree() after confirmation.
+
+
+#Solution:
+
+
+# import os
+# import shutil
+
+
+# # Creating Folders from 1 to 100:
+
+# def create_folders():
+#     parent_folder = "Folder"
+
+#     if not os.path.exists(parent_folder):
+#         os.makedirs(parent_folder)
+
+#         for n in range(1, 101):
+#             os.makedirs(os.path.join(parent_folder, f"Folder_{n}" ))
+#         print(f"100 folders are created successfully inside 'Folder'")
+
+#     else:
+#         print(f"{parent_folder} already exists")
+
+
+ 
+
+# # List all created folders inside "folder":
+
+# def list_folders():
+#     parent_folder = "Folder"
+#     if os.path.exists(parent_folder):
+#         folders = [f for f in os.listdir(parent_folder) if os.path.isdir(os.path.join(parent_folder,f))]
+#         print(f"All folders inside 'Folder': {folders}")
+#     else:
+#         print("Folder doesn't exist. First create it.")
+     
+
+
+
+# # Deleting all folders inside folder with confirmation  
+# def delete_folders():
+#     parent_folder = "Folder"
+#     confirm = input(f"Do you want to delete all folders inside 'Folder'? (yes/no): ").strip().lower()
+#     if confirm == "yes":
+#         shutil.rmtree(parent_folder, ignore_errors=True)
+#         print("All folders inside 'Folder' are deleted.")
+#     else:
+#         print("Deletion canceled.")
+
+
+
+# def main():
+#     while True:
+#         print("\nOptions")
+#         print("1. Create 100 folders inside 'Folder' ")
+#         print("2. List all 100 folders inside 'Folder' ")
+#         print("3. Delete all 100 folders inside 'Folder' ")
+#         print("4. Exit ")
+
+#         choice = input("Enter you choice: ").strip()
+
+#         if choice == "1":
+#             create_folders()
+#         elif choice == "2":
+#             list_folders()
+#         elif choice == "3":
+#             delete_folders()
+#         elif choice == "4":
+#             break
+#         else:
+#             print("Invalid input.") 
+
+
+
+# if __name__ == "__main__":
+#     main()
+
+
+
+
 
 
 
@@ -529,7 +638,51 @@
 
 # Searches for all empty subdirectories inside a given directory.
 # Deletes only deeply nested empty directories using os.rmdir().
-# If a directory is not empty, move its contents to the parent directory before deleting it.
+ 
+
+
+
+# import os
+# import shutil
+
+
+
+# # Searches and delete all empty dir inside 'Folder'
+
+# def delete_empty_dir():
+
+#     parent_dir = 'Folder'
+
+#     if not os.path.exists(parent_dir):
+#         return
+    
+#     confirm = input(f"Do you want to delete all empty directories inside {parent_dir}? (yes/no): ").strip().lower() 
+
+#     if confirm != "yes":
+#         print(f"Deletion canceled!")
+#         return
+    
+
+#     empty_folders = [
+#         f for f in os.listdir(parent_dir)
+#         if os.path.isdir(os.path.join(parent_dir, f)) and not os.listdir(os.path.join(parent_dir, f))
+#     ]
+
+
+#     if not empty_folders:
+#         print("No empty folder exists")
+#         return
+    
+#     for folder in empty_folders:
+#         os.rmdir(os.path.join(parent_dir, folder))
+#         print(f"Deleted: {folder}")
+#     print("All empty folders  are successfully deleted.")  
+
+
+
+# if __name__ == "__main__":
+
+#     delete_empty_dir()
 
 
 
@@ -539,14 +692,4 @@
 
 
 
-
-
-
-
-# Write a script that:
-
-# Finds all .log files in the current directory.
-# Renames each .log file to have a .bak extension before deleting it.
-# Example: server.log → server.bak → then delete it.
-# If a .bak version already exists, append a number to the filename (server_1.bak, server_2.bak, etc.).
-
+ 
