@@ -12,3 +12,13 @@ Virtual environment
 
 
 modules 
+
+
+pandas
+
+
+sum up all python
+
+
+
+

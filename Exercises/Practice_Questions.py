@@ -447,8 +447,41 @@
 
 
 
+#####################--------------  datetime module  --------------###################
 
 
+# 1. Find the Number of Days Until Your Next Birthday
+# Write a Python program that:
+# Takes the user's birth date as input (format: YYYY-MM-DD).
+# Calculates how many days are left until their next birthday.
+ 
+
+
+# 2. Convert a Given Date to Different Time Zones
+# Write a function that takes a date-time string (YYYY-MM-DD HH:MM:SS) and a target timezone (e.g., "Asia/Karachi", "America/New_York").
+# Convert the date-time to the specified timezone.
+ 
+
+
+
+# 3. Generate a List of All Sundays in a Given Year
+# Write a function that takes a year (e.g., 2025) and returns a list of all Sundays in that year.
+ 
+
+
+# 4. Calculate the Time Difference Between Two Time Zones
+# Write a function that:
+# Takes two timezone names (e.g., "UTC", "Asia/Karachi") as input.
+# Prints the current time in both time zones.
+# Calculates the time difference between them.
+ 
+
+
+# 5. Find the First Monday of Each Month in a Given Year
+# Write a function that:
+# Takes a year as input.
+# Returns a list of the first Monday of each month in that year.
+ 
 
 
 
