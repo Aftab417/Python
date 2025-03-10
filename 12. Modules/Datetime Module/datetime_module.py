@@ -21,6 +21,12 @@
 
 
 
+
+
+
+
+
+
 #  Common  methods  and  function in datetime module
 
 
@@ -37,6 +43,12 @@
 
 
 
+
+
+
+
+
+
 ################## ---------  Get current date  ----------------###################
 
 
@@ -45,6 +57,9 @@
 # today = date.today()
 
 # print(today)
+
+
+
 
 
 
@@ -73,6 +88,9 @@
 
 
 
+
+
+
 ################## ---------  Formate datetime  (strftime) ----------------###################
 
 # strftime  method is used to formate a datetime object into a string.
@@ -92,12 +110,40 @@
 
 #  Common  Formate  codes:
 
+
+# about days:
+
+#  %a      -------->      Weekdays short version      Wed
+   
+#  %A      -------->      Weekdays full version       Wednesday 
+
+#  %w      -------->      Weekdays as number          0 - 6          6 = sunday 
+
+#  %d      -------->      Day pf month(1 - 31) 
+
+
+# about months:
+
+#  %b      -------->      Month as short version      jan 
+
+#  %B      -------->      Month as full version       january 
+
+#  %m      -------->      Month as number (1 - 12) 
+
+
+
+
+# about year:
+
 #  %Y      -------->      Full Year (2025) 
+
+#  %y      -------->      year without centuary (25) 
+
+
+
   
-#  %m      -------->      Month (1 - 12) 
-   
-#  %d      -------->      Day (1 - 31) 
-   
+# time:     
+    
 #  %H      -------->      Hours (00 - 23) 
    
 #  %M      -------->      Minutes (00 - 59) 
@@ -105,6 +151,39 @@
 #  %S      -------->      Seconds (00 - 59 )  
   
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################## ---------  Parsing a string into a datetime object  strptime()  ----------------###################
+
+# We can parse a string into datetime object using strptime() class.
+
+
+# from datetime import datetime
+# string_date = "2025-3-28 17:20:58"
+
+# parsed_date = datetime.strptime(string_date, "%Y-%m-%d  %H:%M:%S")
+
+
+# print(parsed_date)
+
+
+
+
+
+
+
 
 
 
@@ -144,19 +223,6 @@
 
 
 
-################## ---------  Parsing a string into a datetime object  strptime()  ----------------###################
-
-# We can parse a string into datetime object using strptime() class.
-
-
-# from datetime import datetime
-# string_date = "2025-3-28 17:20:58"
-
-# parsed_date = datetime.strptime(string_date, "%Y-%m-%d  %H:%M:%S")
-
-
-# print(parsed_date)
-
 
 
 
@@ -190,6 +256,7 @@
 
 
 
+
 ################## ---------  Handle time zone  pytz   ----------------###################
 
 #  We can use  pytz  module to handle timezone.
@@ -205,6 +272,9 @@
 # utc_time = datetime.now(utc)
 
 # print(utc_time)                           # This will return utc time
+
+
+
 
 
 
