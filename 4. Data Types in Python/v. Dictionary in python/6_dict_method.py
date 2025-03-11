@@ -74,3 +74,28 @@
 # This is use to delete the item or whole list.
 # del student["age"]
 # print(student)
+
+
+
+
+#################--------------- Merge two dictionaries  --------------------#####################
+
+
+
+# dic1 = {
+#     "name": "aftab",
+#     "age": 18,
+#     "city": "Islamabad" 
+# }
+
+
+# dic2 = {
+#     "profession": "student",
+#     "skills": ["python", "DevOps", "Generative AI"]
+# }
+
+
+
+# dic3 = {**dic1, **dic2}
+
+# print(dic3)

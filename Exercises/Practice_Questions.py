@@ -494,3 +494,104 @@
 
 
 
+
+################--------------  JSON Module  ----------------#####################
+
+
+
+# 1️⃣ Read & Write JSON File with Nested Data
+
+
+# Problem:
+# You have the following Python dictionary:
+
+
+# data = {
+#     "user": {
+#         "name": "Aftab",
+#         "age": 21,
+#         "skills": ["Python", "Docker", "JavaScript"]
+#     },
+#     "location": {
+#         "city": "Lahore",
+#         "country": "Pakistan"
+#     }
+# }
+
+
+
+# Task:
+
+# Write this dictionary into a JSON file named user_data.json.
+# Read the JSON file and print only the user’s skills.
+
+
+
+
+
+
+
+# 2️⃣ Convert JSON String to Python & Modify It
+
+
+# Problem:
+# You receive the following JSON string from an API:
+
+ 
+# json_string = '{"product": "Laptop", "price": 1200, "in_stock": true}'
+
+
+
+
+# Task:
+
+# Convert this JSON string into a Python dictionary.
+# Increase the price by 10%.
+# Convert it back to a JSON string and print the new JSON data.
+
+
+
+
+
+
+
+
+
+
+
+
+# 3️⃣ Merge Two JSON Files and Save the Result
+
+
+# Problem:
+# You have two JSON files:
+
+
+# file1.json
+ 
+# {
+#     "name": "Aftab",
+#     "age": 21,
+#     "city": "Lahore"
+# }
+
+
+
+
+# file2.json
+ 
+
+# {
+#     "skills": ["Python", "JavaScript", "Docker"],
+#     "experience": "2 years"
+# }
+
+
+
+
+# Task:
+
+# Read both files and merge their content into one dictionary.
+# Save the merged dictionary into a new JSON file called merged_data.json.
+
+

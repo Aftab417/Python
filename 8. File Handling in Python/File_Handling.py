@@ -102,3 +102,69 @@
 #     os.rmdir("hello")
 # else:
 #     print("Folder does not exist.")
+
+
+
+
+
+
+
+
+
+
+#############---------------   reading and writting  "r+" ------------###############
+
+# This mode will open the file in both read and write mode.
+
+# with open("json_data", "r+") as file:
+#     file.write("hello world")
+
+
+
+
+
+
+
+
+
+#############---------------   reading and writting  "w+" ------------###############
+
+# This mode will open the file in both read and write mode.
+
+ 
+# with open("json_data", "w+") as file:
+#     print(file.read())
+  
+
+
+
+
+
+
+
+
+
+#############---------------   reading and appending  "a+" ------------###############
+
+# This method will open file in both read and appened mode.
+ 
+
+# with open("json_dat", "a+") as file:
+#     file.write("world") 
+#     print(file.read())
+
+
+
+
+
+
+
+
+
+#############---------------   seek() method  ------------###############
+
+# This method is used to move the cursor in the begining of content in the file.
+
+# with open("json_data", "r") as file:
+#     file.seek(0)
+#     print(file.read())
