@@ -595,3 +595,117 @@
 # Save the merged dictionary into a new JSON file called merged_data.json.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+###################---------------   RegEx (re)  Module  ----------------#######################
+
+
+    
+# Match a Pattern:
+# Write a regex to match any email address in a given text.
+# Example: "Contact us at support@example.com" → Match: "support@example.com"
+
+
+
+# Find All Occurrences:
+# Extract all words that start with a capital letter from a string.
+# Example: "Hello from Python and Regex World!" → Match: ["Hello", "Python", "Regex", "World"]
+
+
+
+# Check a Valid Phone Number:
+# Write a regex to check if a string is a valid phone number in the format +92-300-1234567 (Pakistan number format).
+
+
+
+
+# Replace Text:
+# Replace all occurrences of "color" with "colour" in a given text using re.sub().
+
+
+
+
+
+# Extract Numbers:
+# Write a regex to extract all numbers (including decimals) from a string.
+# Example: "The price is 123.50 and the discount is 20%" → Match: ["123.50", "20"]
+
+
+
+
+
+# Validate a Password:
+# Write a regex to check if a password is valid. A valid password:
+# Has at least 8 characters
+# Contains at least one uppercase letter
+# Contains at least one lowercase letter
+# Contains at least one digit
+# Contains at least one special character (e.g., @, #, $, %)
+
+
+
+
+
+
+
+# Extract Domain from URLs:
+# Write a regex to extract domain names from URLs.
+# Example: "https://www.google.com, http://example.org" → Match: ["google.com", "example.org"]
+
+
+
+
+
+
+# Split a Sentence into Words:
+# Use re.split() to split a sentence into words, considering spaces, commas, and periods as delimiters.
+# Example: "Hello, how are you? I am fine." → ["Hello", "how", "are", "you", "I", "am", "fine"]
+
+
+
+
+
+
+# Find Duplicate Words:
+# Write a regex to detect duplicate words in a sentence.
+# Example: "This is is a test test sentence." → Match: ["is", "test"]
+
+
+
+
+
+# Validate an IPv4 Address:
+# Write a regex to check if a string is a valid IPv4 address (e.g., "192.168.1.1", "255.255.255.0", etc.).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
