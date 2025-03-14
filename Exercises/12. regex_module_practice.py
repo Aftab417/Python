@@ -29,8 +29,7 @@
 
 
 
-
-
+ 
 
 
 
@@ -63,8 +62,7 @@
 
 
 
-
-
+ 
 
 
 
@@ -108,8 +106,7 @@
 
 
 
-
-
+ 
 
 
 
@@ -213,8 +210,7 @@
 
 
 
-
-
+ 
 
 
 
@@ -227,6 +223,95 @@
 
 
 # Solution:
+
+ 
+# import re
+
+# txt = "https://www.google.com, http://example.org" 
+
+# pattern = r"https?://(?:www\.)?([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})"
+
+# domains = re.findall(pattern, txt)
+
+# print(f"Domains: {domains}")
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+# Split a Sentence into Words:
+# Use re.split() to split a sentence into words, considering spaces, commas, and periods as delimiters.
+# Example: "Hello, how are you? I am fine." → ["Hello", "how", "are", "you", "I", "am", "fine"]
+
+
+
+
+# Solution:
+
+
+
+# import re
+
+
+# txt = "Hello, how are you? I am fine."
+
+# pattern = r"[,?\.\s]"
+
+
+# word = re.split(pattern, txt)
+
+# words = list(filter(None, word))
+
+# print(words)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Find Duplicate Words:
+# Write a regex to detect duplicate words in a sentence.
+# Example: "This is is a test test sentence." → Match: ["is", "test"]
+
+
+# Solution:
+
+
+# import re
+
+# sentence = "This is is a test test sentence."
+
+# pattern = r"\b(\w+)\b\s+\b\1\b"
+
+# duplicates = re.findall(pattern, sentence, re.IGNORECASE)
+
+# print(duplicates)
+
+
 
  
 
@@ -243,34 +328,29 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Split a Sentence into Words:
-# Use re.split() to split a sentence into words, considering spaces, commas, and periods as delimiters.
-# Example: "Hello, how are you? I am fine." → ["Hello", "how", "are", "you", "I", "am", "fine"]
-
-
-
-
-
-
-# Find Duplicate Words:
-# Write a regex to detect duplicate words in a sentence.
-# Example: "This is is a test test sentence." → Match: ["is", "test"]
-
-
-
-
-
 # Validate an IPv4 Address:
 # Write a regex to check if a string is a valid IPv4 address (e.g., "192.168.1.1", "255.255.255.0", etc.).
+
+
+
+
+
+# import re
+
+
+# def ip_address_validation(address):
+
+#     pattern = r"^(25[0-5]|2[0-4][0-9]|1?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|1?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|1?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|1?[0-9][0-9]?)$" 
+
+#     is_valid = re.match(pattern, address)
+
+#     if is_valid:
+#         print(f"'{address}' is a valid IP")
+#     else:
+#         print(f"'{address}' is not a valid IP")
+     
+#     return
+
+# ip_address_validation(input(f"Enter Your IP address: ").strip())         
+
+

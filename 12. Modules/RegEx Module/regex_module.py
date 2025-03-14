@@ -106,14 +106,23 @@
 
 
 
-
-
 #   (?: ... )           This is non-capturing group. it group the pattern but does not store in the final match result.
 
 # e.g:  (?:www\.)       This  will not capture the  "www."
 
 
 
+
+
+
+
+
+
+
+#   ()               It is capturing group. Anything inside it is captured.   
+# 
+# 
+#   e.g:     r"\b(\w+)\b"     This will capture the whole word.
 
 
 
