@@ -305,3 +305,69 @@
  
 
 
+
+
+
+####################---------------- ord(chr) -----------------------#######################
+
+# It takes a character and gives its "ASCII" valie.   e.g:  A  ----->   65
+
+
+# print(ord("A"))
+# print(ord("a"))
+# print(ord("k"))
+# print(ord("+"))
+
+
+
+
+
+
+
+
+####################---------------- chr(ord) -----------------------#######################
+
+# It takes an  "ASCII" value and return its corresponding  character.     e.g:   65  ------>  A
+
+
+# print(chr(1))
+# print(chr(2))
+# print(chr(3))
+# print(chr(4))
+# print(chr(5))
+  
+
+
+
+
+
+
+
+
+####################---------------- pow() -----------------------#######################
+
+#  Return x**y      e.g:  pow(2, 3)    ---->  8
+
+
+
+# x = pow(2, 3)
+# print(x)
+
+
+
+
+
+# y  =  pow(4, 5) 
+# print(y)
+
+
+
+
+
+
+
+
+
+ 
+
+ 
