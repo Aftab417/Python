@@ -172,65 +172,65 @@
 
  
 
-import os
-import shutil
+# import os
+# import shutil
 
-def file_organize(target_dir):
+# def file_organize(target_dir):
 
-    # ensuring the existance of  target_dir
-    if not os.path.exists(target_dir):
-        print(f"Directory doesn't exists")
-        return
-
-
-    base_dir = os.path.join(target_dir, "workspace")
-
-    subdirs = {
-        "images" : [".png", ".jpeg", ".gif"],
-        "documents" : [".txt", ".pdf", ".docx"],
-        "videoes" : [".mp4"],
-        "audioes" : [".mp3"],
-        "coding_files" : [".html", ".py", ".js", ".ts", ".php", ".env"],
-        "others" : []
-    }
+#     # ensuring the existance of  target_dir
+#     if not os.path.exists(target_dir):
+#         print(f"Directory doesn't exists")
+#         return
 
 
+#     base_dir = os.path.join(target_dir, "workspace")
 
-
-    # ensuring the existance of base_dir     
-    if not os.path.exists(base_dir):
-        os.makedirs(base_dir)
-
-
-    # ensuring the existance of subdirs 
-    for subdir in subdirs.keys():
-        if not os.path.exists(os.path.join(base_dir, subdir)):
-            os.makedirs(os.path.join(base_dir, subdir))  
+#     subdirs = {
+#         "images" : [".png", ".jpeg", ".gif"],
+#         "documents" : [".txt", ".pdf", ".docx"],
+#         "videoes" : [".mp4"],
+#         "audioes" : [".mp3"],
+#         "coding_files" : [".html", ".py", ".js", ".ts", ".php", ".env"],
+#         "others" : []
+#     }
 
 
 
-    # Extracting files in a list
 
-    files = [f for f in os.listdir(target_dir) if os.path.isfile(os.path.join(target_dir, f))]
+#     # ensuring the existance of base_dir     
+#     if not os.path.exists(base_dir):
+#         os.makedirs(base_dir)
 
 
-    # Check extension of each file and move it to relevent folder 
-    for file in files:
-        file_ext = os.path.splitext(file)[1].lower()
-        moved = False
-
-        for subdir, extensions in subdirs.items():
-            if file_ext in extensions:
-                shutil.move(os.path.join(target_dir, file), os.path.join(base_dir, subdir, file))
-                moved =  True
-
-        if not moved:
-            shutil.move(os.path.join(target_dir, file), os.path.join(base_dir, "others", file)) 
+#     # ensuring the existance of subdirs 
+#     for subdir in subdirs.keys():
+#         if not os.path.exists(os.path.join(base_dir, subdir)):
+#             os.makedirs(os.path.join(base_dir, subdir))  
 
 
 
-if __name__ == "__main__":
-    file_organize("C:\\Users\\ML\\OneDrive\\Desktop\\set")
+#     # Extracting files in a list
+
+#     files = [f for f in os.listdir(target_dir) if os.path.isfile(os.path.join(target_dir, f))]
+
+
+#     # Check extension of each file and move it to relevent folder 
+#     for file in files:
+#         file_ext = os.path.splitext(file)[1].lower()
+#         moved = False
+
+#         for subdir, extensions in subdirs.items():
+#             if file_ext in extensions:
+#                 shutil.move(os.path.join(target_dir, file), os.path.join(base_dir, subdir, file))
+#                 moved =  True
+
+#         if not moved:
+#             shutil.move(os.path.join(target_dir, file), os.path.join(base_dir, "others", file)) 
+
+
+
+# if __name__ == "__main__":
+#     file_organize("C:\\Users\\ML\\OneDrive\\Desktop\\set")
 
 
 

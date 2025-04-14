@@ -328,7 +328,7 @@
 
 
 
-#####################------------ Polymorphism with Function adn Objects  ---------------############################
+#####################------------ Polymorphism with Function and Objects  ---------------############################
 
 
 # Python allows functions to use objects of different types as long as they have same method.

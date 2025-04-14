@@ -78,7 +78,7 @@
 
 
 # def encrypt_file(input_file, output_file):
-#     with open(input_file, "r") as infile, open(output_file, "w") as outfile:
+#     with open(input_file, "r", encoding="latin1") as infile, open(output_file, "w", encoding="latin1") as outfile:
 #         for line in infile:
 #             encrypted_line = ''.join(chr(ord(char) + 3) for char in line)
 #             outfile.write(encrypted_line)
@@ -93,6 +93,7 @@
 #             outfile.write(decrypted_line)
 # decrypt_file("ecrypted.txt", "decrypted.txt")
 # print("File decrypted successfully!")
+
 
 
  
